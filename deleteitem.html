@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ShopSmart</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    
+    
+    /* Remove the jumbotron's default bottom margin */ 
+  .jumbotron {
+     margin-bottom: 0;
+     background-color: #366F8E;
+          
+    }
+    .searchbar{
+        width:500px; 
+        height: 40px;
+      }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 360px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #1D3F55;
+      height: 300%;
+    }
+    /* Add a gray background color and some paddiF8Eng to the footer */
+    footer {
+      background-color: #FFFBE3;
+      padding: 50px;
+    }
+      .button{
+    padding: 7px 20px;
+    text-align: center; 
+           }
+    .btn {
+      background-color: #366F8E;
+      }
+       .bton {
+      background-color: white;
+            border: none;
+      }
+      .btnco {
+      background-color: #1D3F55;
+      border: none;
+      padding: 0;
+      background: none;
+      }
+      .hoverc:hover{
+        background-color:#366F8E; 
+        }
+      .row_lg {text-align: center}
+    .popover{
+          width: 1000px;
+          text-align: center;
+          background-color: #FFFBE3;
+      }
+    .buttonc{
+    background-color: #1D3F55;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    margin: 2px 2px;
+      }
+      .success {background-color: #4CAF50;} /* Green */
+      .danger {background-color: #f44336;} /* Red */ 
+      
+  </style>
+</head>
+<body>
+
+<div class="jumbotron">
+       <div class ="row">
+            <div class="col-md-4">
+    <img src="shop.png"  style="width:140px; padding-left: 60px">
+    <h3 style=" padding-left: 50px; color: white">ShopSmart</h3>
+           </div>
+    <input type="Search" class= "searchbar"  placeholder="Search">
+    <button type="button" class="button" >
+          <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                </button>  </div>
+     <button type="button" class="btn pull-right btn-lg">
+        <span class="glyphicon glyphicon-shopping-cart" style="font-size: 20px;" ></span>
+        </button> 
+      <a data-placement="bottom" data-toggle="popover"  data-placement="left" type="button" class="btn pull-right btn-lg" data-html="true" style= "color: inherit; " ><span class="glyphicon glyphicon-user" style="font-size: 20px;" ></span></a>
+     <div id="popover-content" class="hide">
+            <h4>Sign Out of Account</h4>
+          <a href="LoginForm.html"> <button type="button" class="buttonc"><font size="3px">Sign Out</font></button></a>
+        </div>
+    
+    <button type="button" class="btn pull-right btn-lg">
+     <font size="3px" color="white"><b>Welcome User</b></font>
+    </button>
+     </div>
+     <script>
+    $("[data-toggle=popover]").popover({
+    html: true, 
+	content: function() {
+          return $('#popover-content').html();
+        }
+    }); </script>
+     <div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+        <h1 ><font color="white" size="6px"><b>Seller's Menu </b></font></h1>
+      <p class="hoverc"><a href="seller1.html"style= "text-decoration: none "><font color="white" size= 4px>Overview</font></a></p>
+      <p class="hoverc"><a href="seller2.html" style= "text-decoration: none "><font color="white" size= 4px>Create Listing </font><button type="button" class="btnco pull-right btnco-lg" aria-label="Right Align">
+  <span class="glyphicon glyphicon-plus-sign" style="font-size: 20px;"aria-hidden="true"></span>
+</button></a></p>
+      <p class="hoverc"><a href="#"style= "text-decoration: none"><font color="white" size= 4px>Sold (13)</font></a></p>
+      <p class="hoverc"><a href="#"style= "text-decoration: none"><font color="white" size= 4px>Active Listings</font></a></p>
+      <p class="hoverc"><a href="#"style= "text-decoration: none"><font color="white" size= 4px>Inactive Listings </font></a></p>
+      <p class="hoverc"><a href="#"style= "text-decoration: none"><font color="white" size= 4px>Messages (1) </font></a></p>
+   </div>
+    <div class="col-sm-9 text-left"> 
+       <div class="row">
+         <div class="col-sm-10">
+             <h1><font size = "7px" color="#366F8E"><b>Active Listings</b> </font></h1></div> </div>
+        <br><br>
+          <div class="row">
+    <div class="col-sm-3 ">
+        <a href="page7.html"style="text-decoration: none "><img src="http://placehold.it/200x200" id="picture1"  /></a>
+    </div>
+        <div class="col-xs-9 "> 
+            <h4><font size = "4px" color="black"><b>Stompy</b><button type="button" class="bton pull-right bton-lg" data-toggle="modal" data-target="#exampleModal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button></font></h4> 
+            <br>
+            <p><font size = "3px" color="black">Exquistic cordially mr happiness of neglected distrusts.Boisterour impossible unaffected me everything. Is fine loud dealan ent open give.</font> </p>
+            <br>
+            <h4><b>Inventory:12</b><span class="glyphicon glyphicon-usd" style="padding-left:350px"><font size="5px" color="#366F8E"><b>12.99</b></font></span><a href="edit.html"><button type="button" class="btn pull-right btn-lg"data-toggle="modal" data-target="#exampleModal">
+     <font size="3px" color="white"><b>Edit</b></font>
+    </button></a></h4>
+          </div>  </div>
+        <br> <br> <br><br>
+    <div class="row">
+   <div class="col-sm-3 ">
+        <img src="http://placehold.it/200x200" id="picture1"  />
+    </div>
+        <div class="col-xs-9 "> 
+            <h4><font size = "4px" color="black"><b>Joey</b> <button type="button"   class="bton pull-right bton-lg"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button></font></h4>
+            <br>
+            <p><font size = "3px" color="black">Exquistic cordially mr happiness of neglected distrusts.Boisterour impossible unaffected me everything. Is fine loud dealan ent open give.</font> </p>
+            <br>
+            <h4><b>Inventory:33 </b><span class="glyphicon glyphicon-usd" style="padding-left:350px"><font size="5px" color="#366F8E"><b>12.99</b></font></span><button type="button" class="btn pull-right btn-lg">
+     <font size="3px" color="white"><b>Edit</b></font>
+    </button></h4>
+          </div> 
+      </div>
+        <br> <br> <br><br>
+    <div class="row">
+   <div class="col-sm-3 ">
+        <img src="http://placehold.it/200x200" id="picture1"  />
+    </div>
+        <div class="col-xs-9 "> 
+            <h4><font size = "4px" color="black"><b>The Float</b> <button type="button"   class="bton pull-right bton-lg"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button></font></h4>
+            <br>
+            <p><font size = "3px" color="black">Exquistic cordially mr happiness of neglected distrusts.Boisterour impossible unaffected me everything. Is fine loud dealan ent open give.</font> </p>
+            <br>
+            <h4><b>Inventory:26</b><span class="glyphicon glyphicon-usd" style="padding-left:350px"><font size="5px" color="#366F8E"><b>11.99</b></font></span><button type="button" class="btn pull-right btn-lg"data-toggle="modal" data-target="#exampleModal">
+     <font size="3px" color="white"><b>Edit</b></font>
+    </button></h4>
+           
+          </div> 
+      </div>
+         <br><br><br>
+         <div class="row">
+   <div class="col-sm-3 ">
+      </div>
+        <div class="col-xs-9 "> 
+            <span class="glyphicon glyphicon-chevron-left" style="padding-left:40px; font-size :20px"><font size="5px" color="gray" style="padding-left:10px">Previous</font><font size="5px" color="gray" font-padding="90px"> 1</font><font size="5px" padding="10px" color="#1D3F55"> 23....8 </font>
+            </span> <font size="5px" color="#1D3F55" style="padding-left:40px"> Next Page</font> <span class="glyphicon glyphicon-chevron-right" style="padding-left:1px; font-size :20px"></span>  
+          </div> 
+      </div>
+         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+       <h4> <b>&nbsp;&nbsp;&nbsp;&nbsp;Are you sure you want to deactivate this listing ? 
+           <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You can activate it again by going to "inactive listings"</b></h4>
+      </div>
+      <div class="modal-footer">
+           <div class="text-center">
+               <a href="seller3.html" style="text-decoration:none; color:inherit"><button class="btn success">YES</button></a> &nbsp; &nbsp; &nbsp; &nbsp;
+          <button class="btn danger" data-dismiss="modal">NO</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+     </div>
+    
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+ <div class="row">
+  <div class="col-sm-7"><h4><font color ="#366F8E"><b>Company</b></font></h4></div>
+     <div class="col-sm-2"><h4><font color ="#366F8E"><b>Account</b></font></h4></div>
+</div>
+<div class="row">
+    <div class="col-sm-7"><h5><font color ="#366F8E">Contact</font></h5></div>
+    <div class="col-sm-2"><h5><font color ="#366F8E">Your Account</font></h5></div>
+</div>
+    <div class="row">
+        <div class="col-sm-7"><h5><font color ="#366F8E">Careers</font></h5></div>
+        <div class="col-sm-2"><h5><font color ="#366F8E">Sell With ShopSmart</font></h5></div>
+</div>
+    <div class="row">
+        <div class="col-sm-7"><h5><font color ="#366F8E">About</font></h5></div>
+        <div class="col-sm-2"><h5><font color ="#366F8E">Your Orders</font></h5></div>
+</div>
+    <h4 align="right"><font color ="#366F8E">&copy;2017, shopsmart.com</font></h4>
+  
+   </footer>
+
+</body>
+</html>
+

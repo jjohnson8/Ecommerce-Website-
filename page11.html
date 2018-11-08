@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ShopSmart</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    
+    
+    /* Remove the jumbotron's default bottom margin */ 
+  .jumbotron {
+     margin-bottom: 0;
+     background-color: #366F8E;
+          
+    }
+    .searchbar{
+        width:500px; 
+        height: 40px;
+      }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 320px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      height: 300%;
+    }
+    /* Add a gray background color and some paddiF8Eng to the footer */
+    footer {
+      background-color: #FFFBE3;
+      padding: 50px;
+    }
+      .button{
+    padding: 7px 20px;
+    text-align: center; 
+           }
+    .btn {
+      background-color: #366F8E;
+      }
+      .btns {
+      background-color: white;
+    
+      }
+      .hoverc:hover{
+          background-color:#366F8E; 
+          }
+           hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+} 
+      .popover{
+          width: 1000px;
+          text-align: center;
+          background-color: #FFFBE3;
+      }
+    .buttonc{
+    background-color: #1D3F55;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    margin: 2px 2px;
+      }
+  </style>
+</head>
+<body>
+
+<div class="jumbotron">
+       <div class ="row">
+            <div class="col-md-4">
+    <img src="shop.png"  style="width:140px; padding-left: 60px">
+    <h3 style=" padding-left: 50px; color: white">ShopSmart</h3>
+           </div>
+    <input type="Search" class= "searchbar"  placeholder="Search">
+    <button type="button" class="button" >
+          <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                </button>  </div>
+     <button type="button" class="btn pull-right btn-lg">
+        <span class="glyphicon glyphicon-shopping-cart" style="font-size: 20px;"></span>
+        </button> 
+    <a data-placement="bottom" data-toggle="popover"  data-placement="left" type="button" class="btn pull-right btn-lg" data-html="true" style= "color: inherit; " ><span class="glyphicon glyphicon-user" style="font-size: 20px;" ></span></a>
+     <div id="popover-content" class="hide">
+            <h4>Sign Out of Account</h4>
+          <a href="LoginForm.html"> <button type="button" class="buttonc"><font size="3px">Sign Out</font></button></a>
+        </div>
+    
+    <button type="button" class="btn pull-right btn-lg">
+     <font size="3px" color="white"><b>Welcome User</b></font>
+    </button>
+     </div>
+     <script>
+    $("[data-toggle=popover]").popover({
+    html: true, 
+	content: function() {
+          return $('#popover-content').html();
+        }
+    }); </script>
+     <div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+    
+      
+    </div>
+      <br> <br><br><br>
+    <div class="col-sm-9 text-left"> 
+         <h2>Thanks! Your Transaction was successful ! A confirmation mail was sent to your e-mail</h2>
+        <div class="row" align ="center"><br><br><br><br>
+<a href="page4.html"><button type="button" class="button" style="background-color: #366F8E"><font size="5px" color="white" >Back to Shopping </font></button></a>
+	</div>
+      </div>
+      
+       
+        </div>
+</div>
+
+<footer class="container-fluid text-center">
+ <div class="row">
+  <div class="col-sm-7"><h4><font color ="#366F8E"><b>Company</b></font></h4></div>
+     <div class="col-sm-2"><h4><font color ="#366F8E"><b>Account</b></font></h4></div>
+</div>
+<div class="row">
+    <div class="col-sm-7"><h5><font color ="#366F8E">Contact</font></h5></div>
+    <div class="col-sm-2"><h5><font color ="#366F8E">Your Account</font></h5></div>
+</div>
+    <div class="row">
+        <div class="col-sm-7"><h5><font color ="#366F8E">Careers</font></h5></div>
+        <div class="col-sm-2"><h5><font color ="#366F8E">Sell With ShopSmart</font></h5></div>
+</div>
+    <div class="row">
+        <div class="col-sm-7"><h5><font color ="#366F8E">About</font></h5></div>
+        <div class="col-sm-2"><h5><font color ="#366F8E">Your Orders</font></h5></div>
+</div>
+    <h4 align="right"><font color ="#366F8E">&copy;2017, shopsmart.com</font></h4>
+  
+   </footer>
+
+</body>
+</html>
+

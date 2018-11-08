@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ShopSmart</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    
+    
+    /* Remove the jumbotron's default bottom margin */ 
+  .jumbotron {
+     margin-bottom: 0;
+     background-color: #366F8E;
+          
+    }
+    .searchbar{
+        width:500px; 
+        height: 40px;
+      }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 370px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #1D3F55;
+      height: 300%;
+    }
+    /* Add a gray background color and some paddiF8Eng to the footer */
+    footer {
+      background-color: #FFFBE3;
+      padding: 50px;
+    }
+      .button{
+    padding: 7px 20px;
+    text-align: center; 
+           }
+    .btn {
+      background-color: #366F8E;
+      }
+      .btns {
+      background-color: white;
+    
+      }
+      .hoverc:hover{
+          background-color:#366F8E; 
+          }
+     
+  </style>
+</head>
+<body>
+
+<div class="jumbotron">
+       <div class ="row">
+            <div class="col-md-4">
+    <img src="shop.png"  style="width:140px; padding-left: 60px">
+    <h3 style=" padding-left: 50px; color: white">ShopSmart</h3>
+           </div>
+    <input type="Search" class= "searchbar"  placeholder="Search">
+    <button type="button" class="button" >
+          <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                </button>  </div>
+     <button type="button" class="btn pull-right btn-lg">
+        <span class="glyphicon glyphicon-shopping-cart "style="font-size: 20px;" ></span>
+        </button> 
+    <button type="button" class="btn pull-right btn-lg"  ><span class="glyphicon glyphicon-user " style="font-size: 20px;" ></span></button>
+    <button type="button" class="btn pull-right btn-lg">
+     <font size="3px" color="white"><b>Welcome User</b></font>
+    </button>
+     </div>
+     <div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+        <h1><font color="white"size="6px"><b>Categories</b> </font></h1>
+      <p class="hoverc"><a href="#"style= "text-decoration: none "><font color="white" size= 4px>Books & E-books</font></a></p>
+      <p class="hoverc"><a href="#" style= "text-decoration: none "><font color="white" size= 4px>Media Entertainment</font></a></p>
+      <p class="hoverc"><a href="#"style= "text-decoration: none"><font color="white" size= 4px>Electronics</font></a></p>
+      <p class="hoverc"><a href="#"style= "text-decoration: none"><font color="white" size= 4px>Home & Garden</font></a></p>
+      <p class="hoverc"><a href="#"style= "text-decoration: none"><font color="white" size= 4px>Toys & Children </font></a></p>
+      <p class="hoverc"><a href="#"style= "text-decoration: none"><font color="white" size= 4px>Fashion & Beauty</font></a></p>
+      <p class="hoverc"><a href="#"style= "text-decoration: none"><font color="white" size= 4px>Art Supplies</font></a></p>
+        <br>
+        <h1><font color="white"size="6px"><b>Genres </b></font></h1>
+        <input type="checkbox" name="genres" value="Horror"><font color="white" size= 4px>Horror</font><br>
+        <input type="checkbox" name="genres" value="Drama" checked> <font color="white" size= 4px>Drama</font><br>
+        <input type="checkbox" name="genres" value="Comedy"> <font color="white" size= 4px>Comedy</font><br>
+        <input type="checkbox" name="genres" value="Thriller"> <font color="white" size= 4px>Thriller</font><br>
+      <br>
+        <h1><font color="white"size="6px"><b>Price</b> </font></h1>
+      <p ><font color="white" size= 4px>Under $5</font></p>
+      <p><font color="white" size= 4px>$5 to $10</font></p>
+      <p><font color="white" size= 4px>$10 to $20</font></p>
+      
+    </div>
+      <br> 
+    <div class="col-sm-9 text-left"> 
+         <div class="row">
+         <div class="col-sm-10">
+                 <h1><font size = "7px" color="#366F8E"><b>Drama Movies</b> </font></h1></div>
+             
+             <label for="sel1"><font size="3px"><b>Sort By:</b></font></label>  
+      <select id="sel1" class="drop" name="sel1" style="width:150px; font-size:17px"> 
+    <option value="1">Recommended</option>
+    <option value="2">Price: Low-High</option>
+     <option value="3" selected>Price: High-Low</option>
+</select></div> 
+        <script type="text/javascript">
+
+    jQuery('#sel1').on('change', function(){
+        
+        if(jQuery(this).val() == 1){
+        window.location.href = 'page6.html'
+        }
+        if(jQuery(this).val() == 2){
+        window.location.href = 'hightolow.html'
+        }
+        
+        })
+</script>
+        <br><br>
+    <div class="row">
+    <div class="col-sm-3 ">
+        <a href="page7.html"style="text-decoration: none "><img src="http://placehold.it/200x200" id="picture1"  /></a>
+    </div>
+        <div class="col-xs-9 "> 
+            <h4><a href="page7.html"style="text-decoration: none "><font size = "4px" color="black"><b>Stompy</b> </font></a></h4>
+            <br>
+            <p><font size = "3px" color="black">Exquistic cordially mr happiness of neglected distrusts.Boisterour impossible unaffected me everything. Is fine loud dealan ent open give.</font> </p>
+            <br>
+            <h4>Free Shipping Inside US <img src="Star%20Copy%203.png" /><img src="Star%20Copy%203.png"/><img src="Star%20Copy%203.png" /><img src="Star%20Copy%203.png"/> <img src="Star%20Copy%204.png"/>(55)<span class="glyphicon glyphicon-usd" style="padding-left:350px"><font size="5px">12.99</font></span></h4>
+          </div>  </div>
+        <br> <br> <br><br>
+    <div class="row">
+   <div class="col-sm-3 ">
+        <img src="http://placehold.it/200x200" id="picture1"  />
+    </div>
+        <div class="col-xs-9 "> 
+            <h4><font size = "4px" color="black"><b>Joey</b> </font></h4>
+            <br>
+            <p><font size = "3px" color="black">Exquistic cordially mr happiness of neglected distrusts.Boisterour impossible unaffected me everything. Is fine loud dealan ent open give.</font> </p>
+            <br>
+            <h4>Free Shipping Inside U.S <img src="Star%20Copy%203.png" /><img src="Star%20Copy%203.png"/><img src="Star%20Copy%203.png" /><img src="Star%20Copy%203.png"/> <img src="Star%20Copy%203.png"/>(55)<span class="glyphicon glyphicon-usd" style="padding-left:350px"><font size="5px">12.99</font></span></h4>
+          </div> 
+      </div>
+        <br> <br> <br><br>
+    <div class="row">
+   <div class="col-sm-3 ">
+        <img src="http://placehold.it/200x200" id="picture1"  />
+    </div>
+        <div class="col-xs-9 "> 
+            <h4><font size = "4px" color="black"><b>The Float</b> </font></h4>
+            <br>
+            <p><font size = "3px" color="black">Exquistic cordially mr happiness of neglected distrusts.Boisterour impossible unaffected me everything. Is fine loud dealan ent open give.</font> </p>
+            <br>
+            <h4>Free Shipping Inside US <img src="Star%20Copy%203.png" /><img src="Star%20Copy%203.png"/><img src="Star%20Copy%203.png" /><img src="Star%20Copy%204.png"/> <img src="Star%20Copy%204.png"/>(55)<span class="glyphicon glyphicon-usd" style="padding-left:350px"><font size="5px">11.99</font></span></h4>
+          </div> 
+      </div>
+         <br><br><br><br>
+         <div class="row">
+   <div class="col-sm-3 ">
+      </div>
+        <div class="col-xs-9 "> 
+            <span class="glyphicon glyphicon-chevron-left" style="padding-left:40px; font-size :20px"><font size="5px" color="gray" style="padding-left:10px">Previous</font><font size="5px" color="gray" font-padding="90px"> 1</font><font size="5px" padding="10px" color="#1D3F55"> 23....8 </font>
+            </span> <font size="5px" color="#1D3F55" style="padding-left:40px"> Next Page</font> <span class="glyphicon glyphicon-chevron-right" style="padding-left:1px; font-size :20px"></span>  
+          </div> 
+      </div>
+     </div>
+    
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+ <div class="row">
+  <div class="col-sm-7"><h4><font color ="#366F8E"><b>Company</b></font></h4></div>
+     <div class="col-sm-2"><h4><font color ="#366F8E"><b>Account</b></font></h4></div>
+</div>
+<div class="row">
+    <div class="col-sm-7"><h5><font color ="#366F8E">Contact</font></h5></div>
+    <div class="col-sm-2"><h5><font color ="#366F8E">Your Account</font></h5></div>
+</div>
+    <div class="row">
+        <div class="col-sm-7"><h5><font color ="#366F8E">Careers</font></h5></div>
+        <div class="col-sm-2"><h5><font color ="#366F8E">Sell With ShopSmart</font></h5></div>
+</div>
+    <div class="row">
+        <div class="col-sm-7"><h5><font color ="#366F8E">About</font></h5></div>
+        <div class="col-sm-2"><h5><font color ="#366F8E">Your Orders</font></h5></div>
+</div>
+    <h4 align="right"><font color ="#366F8E">&copy;2017, shopsmart.com</font></h4>
+  
+   </footer>
+
+</body>
+</html>
+
